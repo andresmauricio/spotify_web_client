@@ -8,6 +8,7 @@ import { SearchComponent } from './components/search/search.component';
 import { ArtitsComponent } from './components/artits/artits.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { NotimagePipe } from './pipes/notimage.pipe';
+import { CardComponent } from './components/shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotimagePipe } from './pipes/notimage.pipe';
     SearchComponent,
     ArtitsComponent,
     NavbarComponent,
-    NotimagePipe
+    NotimagePipe,
+    CardComponent
   ],
   imports: [
     BrowserModule,
