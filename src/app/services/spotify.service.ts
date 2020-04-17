@@ -28,7 +28,7 @@ export class SpotifyService {
 
   private setHeaders() {
      this.headers = new HttpHeaders({
-      "Authorization": "Bearer BQB4jpHthvxD1uQ8e83_J9wUoKpu2SKSINYIOrzQwzqSYdeXVkRWtcv4XdFktEPMPNbpshcRExi5Z7V-w28"
+      "Authorization": "Bearer BQCuauqDte63Bzsy5ciIR_k3iGdRGQ12KLPZpb8TUBG9gXls6_Zh5lpLc9WWYCYtZaCVTGfAh1EVBVJhIrQ"
     })
   }
 }

@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { SearchComponent } from './components/search/search.component';
 import { ArtitsComponent } from './components/artits/artits.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { NotimagePipe } from './pipes/notimage.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
     HomeComponent,
     SearchComponent,
     ArtitsComponent,
-    NavbarComponent
+    NavbarComponent,
+    NotimagePipe
   ],
   imports: [
     BrowserModule,
