@@ -1,0 +1,153 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2020-04-17T18:47:47.198Z",
+    "__export_source": "insomnia.desktop.app:v7.1.1",
+    "resources": [
+        {
+            "_id": "req_12fe748e8e9144a49c6b94a32104600c",
+            "authentication": {},
+            "body": {
+                "mimeType": "application/x-www-form-urlencoded",
+                "params": [
+                    {
+                        "description": "",
+                        "id": "pair_97554f2fa19c465182dd03595ed5d362",
+                        "name": "grant_type",
+                        "value": "client_credentials"
+                    },
+                    {
+                        "description": "",
+                        "id": "pair_e714acfb823444c6b47f9ab600cfc2b6",
+                        "name": "client_id",
+                        "value": "d6b55734aa3f4b49af89ae8023b6c69e"
+                    },
+                    {
+                        "description": "",
+                        "id": "pair_eea4d3a864df4dfba1e13d30ad76cfdd",
+                        "name": "client_secret",
+                        "value": "4659ca881ead4eed81c45197f071db34"
+                    }
+                ]
+            },
+            "created": 1587077170963,
+            "description": "",
+            "headers": [
+                {
+                    "id": "pair_6b4d33e70c9f4e218715391cccfd0b6c",
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1587077170963,
+            "method": "POST",
+            "modified": 1587077406717,
+            "name": "token",
+            "parameters": [],
+            "parentId": "wrk_2a48d166c4424191afd15b00e16bc7b1",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "https://accounts.spotify.com/api/token",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_2a48d166c4424191afd15b00e16bc7b1",
+            "created": 1586923723834,
+            "description": "",
+            "modified": 1586923723834,
+            "name": "Insomnia",
+            "parentId": null,
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_2c33b3074e54468c9924662b0c97f45c",
+            "authentication": {},
+            "body": {},
+            "created": 1587078923567,
+            "description": "",
+            "headers": [
+                {
+                    "description": "",
+                    "id": "pair_d61f79652f5c428d8d36b26de917d8cc",
+                    "name": "Authorization",
+                    "value": "Bearer BQDuGV9eAhPT96Jb8SsYnxXg0B6E1ZmzEV_AlScUZFF8_kKpLsgC_b7lm2UBNDI5uYy9eFCNstGYq5TOWEY"
+                }
+            ],
+            "isPrivate": false,
+            "metaSortKey": -1587078923567,
+            "method": "GET",
+            "modified": 1587079004218,
+            "name": "list spotify",
+            "parameters": [],
+            "parentId": "wrk_2a48d166c4424191afd15b00e16bc7b1",
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingFollowRedirects": "global",
+            "settingRebuildPath": true,
+            "settingSendCookies": true,
+            "settingStoreCookies": true,
+            "url": "https://api.spotify.com/v1/browse/new-releases",
+            "_type": "request"
+        },
+        {
+            "_id": "env_0bb56b6c798bc1cb28feef0bdbf97bbd7fe376c4",
+            "color": null,
+            "created": 1586923723888,
+            "data": {},
+            "dataPropertyOrder": null,
+            "isPrivate": false,
+            "metaSortKey": 1586923723888,
+            "modified": 1586923723888,
+            "name": "Base Environment",
+            "parentId": "wrk_2a48d166c4424191afd15b00e16bc7b1",
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_0bb56b6c798bc1cb28feef0bdbf97bbd7fe376c4",
+            "cookies": [
+                {
+                    "creation": "2020-04-16T22:23:14.423Z",
+                    "domain": "restcountries.eu",
+                    "expires": "2020-05-16T22:23:15.000Z",
+                    "extensions": [
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": false,
+                    "httpOnly": true,
+                    "id": "2824956227268227",
+                    "key": "__cfduid",
+                    "lastAccessed": "2020-04-16T22:23:14.423Z",
+                    "path": "/",
+                    "value": "d663a6caf90a274265f99c81e9f0902ea1587075795"
+                },
+                {
+                    "creation": "2020-04-16T22:46:15.729Z",
+                    "domain": "accounts.spotify.com",
+                    "extensions": [
+                        "Version=1",
+                        "SameSite=Lax"
+                    ],
+                    "hostOnly": true,
+                    "httpOnly": true,
+                    "id": "0031963684811775472",
+                    "key": "__Host-device_id",
+                    "lastAccessed": "2020-04-16T22:46:15.729Z",
+                    "maxAge": 2147483647,
+                    "path": "/",
+                    "secure": true,
+                    "value": "AQCUSys-LP3ZoW9yQrIQT6Yzr99HT3-dAmNDhNKbA7VUvXc_s3UDX1Yh38S0fYFKABoaRdFp_WB1D0lTV-uzHjPop2D3b9L4oUc"
+                }
+            ],
+            "created": 1586923723890,
+            "modified": 1587077175729,
+            "name": "Default Jar",
+            "parentId": "wrk_2a48d166c4424191afd15b00e16bc7b1",
+            "_type": "cookie_jar"
+        }
+    ]
+}
