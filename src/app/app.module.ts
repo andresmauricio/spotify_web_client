@@ -9,6 +9,7 @@ import { ArtitsComponent } from './components/artits/artits.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { NotimagePipe } from './pipes/notimage.pipe';
 import { CardComponent } from './components/shared/card/card.component';
+import { LoadingComponent } from './components/shared/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardComponent } from './components/shared/card/card.component';
     ArtitsComponent,
     NavbarComponent,
     NotimagePipe,
-    CardComponent
+    CardComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

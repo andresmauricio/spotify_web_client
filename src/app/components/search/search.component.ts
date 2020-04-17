@@ -9,15 +9,18 @@ import { SpotifyService } from 'src/app/services/spotify.service';
 })
 export class SearchComponent implements OnInit {
   public artists: any[] = [];
+  public loading: boolean;
 
   constructor(private spotifyService: SpotifyService) { }
 
-  public search(text) {
-    this.spotifyService.getArtist(text).subscribe((response:any) => {
-      this.artists = response;
-      console.log(response);
-      
-    })
+  public search(text: string) {
+    this.loading = true;
+    if (text.length >= 3) {
+      this.spotifyService.getArtist(text).subscribe((response:any) => {
+        this.artists = response;  
+        this.loading = false;    
+      });
+    }
   }
 
   ngOnInit(): void {
