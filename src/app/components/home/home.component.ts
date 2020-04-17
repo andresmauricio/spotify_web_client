@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
 
   private realeses(): void {
     this.spotifyService.getRealeses().subscribe((response: any) => {
+      console.log(response)
       this.newReleses = response.albums.items;
     });
   }
