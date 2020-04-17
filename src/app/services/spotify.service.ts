@@ -26,9 +26,17 @@ export class SpotifyService {
     return this.queryApi(`search?q=${terms}&type=artist`).pipe(map((data: any) => data.artists.items)); 
   }
 
+  public getArtistProfile(id: string) {
+    return this.queryApi(`artists/${id}`); 
+  }
+
+  public getTopTracks(id: string) {
+    return this.queryApi(`artists/${id}/top-tracks?country=us`).pipe(map((data: any) =>  data.tracks));
+  }
+
   private setHeaders() {
      this.headers = new HttpHeaders({
-      "Authorization": "Bearer BQAobIfXhoKuCt4dXdoSYvvbbYchoiHGCONxP8W4PKUhNrqB8IiQtxBuyMEF8yqULCjmE3J1JfbK3GfJwHI"
+      "Authorization": "Bearer BQDWaZE091A7q8ibsLBiuXP-lHO1gy5xjzOuaWByRSmyBiUxS-LpnPHqpgqNyjB9A7VSmFg9eQHk0fMb_yo"
     })
   }
 }

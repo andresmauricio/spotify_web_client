@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { NotimagePipe } from './pipes/notimage.pipe';
 import { CardComponent } from './components/shared/card/card.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import { DomsanitezerPipe } from './pipes/domsanitezer.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
     NavbarComponent,
     NotimagePipe,
     CardComponent,
-    LoadingComponent
+    LoadingComponent,
+    DomsanitezerPipe
   ],
   imports: [
     BrowserModule,
